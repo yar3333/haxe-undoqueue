@@ -6,13 +6,16 @@ Below you will see the example for text editor.
 Document in the text editor will have two properties: `path` (to file) and `text`.
 
 ## Our document (class or struct) ##
+``haxe
 typedef TextFile =
 {
 	var path : String;
 	var text : String;
 }
+```
 
 ## Create struct to say us what can be changed in the document ##
+```haxe
 typedef Changes =
 {
 	?path: Bool,
