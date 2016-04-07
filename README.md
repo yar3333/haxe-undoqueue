@@ -6,7 +6,7 @@ Below you will see the example for text editor.
 Document in the text editor will have two properties: `path` (to file) and `text`.
 
 ## Our document (class or struct) ##
-``haxe
+```haxe
 typedef TextFile =
 {
 	var path : String;
