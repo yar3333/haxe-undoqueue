@@ -73,6 +73,7 @@ class TextFileTransaction extends undoqueue.Transaction<Operation>
 		return new TextFileTransaction(document, operations);
 	}
 }
+```
 
 ## Implement your own UndoQueue  ##
 ```
@@ -126,7 +127,6 @@ class TextFileUndoQueue extends undoqueue.UndoQueue<Changes, Operation>
 }
 ```
 
-
 ## Using result classes in code ##
 ```haxe
 class Main
@@ -162,4 +162,3 @@ class Main
 	static function isPathValid(s:String) return true;
 }
 ```
-
