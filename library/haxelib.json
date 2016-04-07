@@ -1,0 +1,14 @@
+{
+  "name": "undoqueue",
+  "license": "LGPL",
+  "tags": [""],
+  "description": "Undo/redo queue for your project.",
+  "contributors": ["yar3333"],
+  "releasenote": "Init.",
+  "version": "1.0.0",
+  "url": "https://bitbucket.org/yar3333/haxe-undoqueue",
+  "dependencies":
+  {
+	"stdlib": ""
+  }
+}
