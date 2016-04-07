@@ -31,7 +31,7 @@ class TextFileUndoQueue extends undoqueue.UndoQueue<Changes, Operation>
 	
 	override function addOperationsFromStoredStates()
 	{
-		if (oldPathState != null && document.text != oldPathState)
+		if (oldPathState != null && document.path != oldPathState)
 		{
 			addOperation(Operation.PATH(oldPathState, document.path));
 		}
