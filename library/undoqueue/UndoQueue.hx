@@ -23,7 +23,7 @@ class UndoQueue<Changes, Operation:EnumValue> implements stdlib.AbstractClass
 	{
 		if (freezed) return;
 		
-		log("beginTransaction " + Debug.getDump(changes, 1).replace("\n", " ")/* + "\n" + CallStack.toString(CallStack.callStack())*/);
+		log(function() return "beginTransaction\n\t" + Debug.getDump(changes, 2).replace("\n", "\n\t")/* + "\n" + CallStack.toString(CallStack.callStack())*/);
 		
 		isBeginTransaction = true;
 		
