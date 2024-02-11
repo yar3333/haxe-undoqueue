@@ -2,7 +2,7 @@ package undoqueue;
 
 import stdlib.Debug;
 
-class Transaction<Operation:EnumValue> implements stdlib.AbstractClass
+abstract class Transaction<Operation:EnumValue>
 {
 	public var operations(default, null) : Array<Operation>;
 	

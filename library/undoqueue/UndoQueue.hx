@@ -4,7 +4,7 @@ import stdlib.Debug;
 using StringTools;
 using Lambda;
 
-class UndoQueue<Changes, Operation:EnumValue> implements stdlib.AbstractClass
+abstract class UndoQueue<Changes, Operation:EnumValue>
 {
 	var transactions = new Array<Transaction<Operation>>();
 	var equivalentPositions = new Array<{ p1:Int, p2:Int }>();
