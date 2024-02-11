@@ -43,11 +43,11 @@ abstract class Transaction<Operation:EnumValue>
 		return newTransaction(ops);
 	}
 	
-	function applyOperation(operation:Operation) : Void;
+	abstract function applyOperation(operation:Operation) : Void;
 	
-	function getReversedOperation(operation:Operation) : Operation;
+	abstract function getReversedOperation(operation:Operation) : Operation;
 	
-	function newTransaction(operations:Array<Operation>) : Transaction<Operation>;
+	abstract function newTransaction(operations:Array<Operation>) : Transaction<Operation>;
 	
 	public function toString() return operations.map(function(op) return Type.enumConstructor(op)).join(", ");
 	

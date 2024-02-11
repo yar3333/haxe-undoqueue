@@ -192,11 +192,11 @@ abstract class UndoQueue<Changes, Operation:EnumValue>
 	 */
 	function changed() {}
 	
-	function rememberStates(changes:Changes) : Void;
-	function restoreFromStoredStates() : Void;
-	function clearStoredStates() : Void;
-	function addOperationsFromStoredStates() : Void;
-	function newTransaction() : Transaction<Operation>;
+	abstract function rememberStates(changes:Changes) : Void;
+	abstract function restoreFromStoredStates() : Void;
+	abstract function clearStoredStates() : Void;
+	abstract function addOperationsFromStoredStates() : Void;
+	abstract function newTransaction() : Transaction<Operation>;
 	
 	static function log(v:Dynamic, ?infos:haxe.PosInfos)
 	{
